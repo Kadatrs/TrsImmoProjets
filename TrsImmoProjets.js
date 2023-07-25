@@ -18,14 +18,6 @@ function slideRightIfInView(entries, observer) {
 
 
 
-
-
-
-
-
-
-
-
   
   var leftElement = document.querySelector('.left');
   
