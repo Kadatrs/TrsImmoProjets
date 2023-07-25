@@ -1,0 +1,155 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:serif;
+    background-color: white;
+  }
+
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+  
+footer {
+    background-color: #333;
+    color: grey;
+    text-align: center;
+    padding: 10px;
+  }
+
+  
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+
+.effect:hover {
+  font-size: large;
+}
+
+u {
+  color: red;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+  }
+
+.intro {
+    display: flex;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.left {
+    justify-content: left;
+    text-align: left;
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    text-align: left;
+}
+
+
+.x {
+    display: flex;
+    justify-content: center;
+}
+
+
+#propic {
+    border: red solid 2px;
+    border-radius: 9%;
+    width: 325px;
+    height: 440px;
+}
+
+.propic1 {
+    margin-right: 15px;
+}
+
+.propic2 {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.propic3 {
+    margin-left: 15px;
+}
+
+
+
+/* New CSS for slide-in animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  /* Duration and timing function for the animation */
+  .left.slide-in {
+    animation: slideInFromLeft 2s forwards; /* Adjust the duration (1s) as needed */
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  /* Duration and timing function for the animation */
+  .right.slide-in {
+    animation: slideInFromRight 2s forwards; /* Adjust the duration (1s) as needed */
+  }
+
+
+
+
+
+
+  /* Duration and timing function for the animation */
+  .propic1.slide-in {
+    animation: slideInFromLeft 2s forwards; /* Adjust the duration (1s) as needed */
+  }
+
+
+  .propic2.slide-in {
+    animation:  slideInFromBottom 2s forwards ;
+  }
+
+
+
+  /* Duration and timing function for the animation */
+  .propic3.slide-in {
+    animation: slideInFromRight 2s forwards; /* Adjust the duration (1s) as needed */
+  }
