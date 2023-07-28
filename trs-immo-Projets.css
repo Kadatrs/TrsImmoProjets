@@ -54,6 +54,7 @@ nav a {
     display: flex;
     background-color: #333;
     padding: 20px;
+    padding-left: 0;
     color: white;
 }
 
@@ -78,7 +79,7 @@ nav a {
 #propic {
     border: red solid 2px;
     border-radius: 9%;
-    width: 325px;
+    width: 20%;
     height: 440px;
 }
 
@@ -143,13 +144,42 @@ nav a {
   }
 
 
-  .propic2.slide-in {
-    animation:  slideInFromBottom 2s forwards ;
-  }
-
 
 
   /* Duration and timing function for the animation */
   .propic3.slide-in {
     animation: slideInFromRight 2s forwards; /* Adjust the duration (1s) as needed */
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .intro {
+        padding: 20px;
+    }
+    
+    .intro , .x {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left , .right {
+        text-align: center;
+        width: 100%;
+    }
+
+    #propic {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .propic2.slide-in {
+        animation:  slideInFromRight 2s forwards ;
+      }
+    
+    .propic3.slide-in {
+        animation: slideInFromLeft 2s forwards; /* Adjust the duration (1s) as needed */
+      }
   }
