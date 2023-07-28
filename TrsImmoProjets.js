@@ -76,3 +76,17 @@ function slideRightIfInView(entries, observer) {
   });
   
   observer.observe(rightElement);
+
+
+
+
+
+
+  var rightElement = document.querySelector('.propic2');
+  
+  var observer = new IntersectionObserver(slideRightIfInView, {
+    root: null,
+    threshold: 0.2 // Adjust the threshold as needed
+  });
+  
+  observer.observe(rightElement);
